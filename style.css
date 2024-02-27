@@ -24,8 +24,7 @@ h1{
     height: 40px;
     width: 100%;
     align-items: center;
-    border-radius: 10px;
-    
+    border-radius: 8px 8px 0px 0px;
 }
 
 #titulo-content{
@@ -36,7 +35,7 @@ h1{
 
 .info{
     
-    border: solid black;
+    border: solid black 1px;
     border-radius: 10px;
     display: block;
     width: 44%;
@@ -45,6 +44,7 @@ h1{
 .info input{
     border-radius: 10px;
     height: 30px;
+    border: solid black 1px;
     
 }
 
