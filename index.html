@@ -227,12 +227,14 @@
 
         </div>
 
+        <!--Anexos-->
+
         <div class="produtos">
             <form action="">
 
 
                 <div class="titulo">
-                    <p>Produtos</p>
+                    <p>Anexos</p>
 
                 </div>
 
@@ -245,10 +247,16 @@
                             <div class="iten">
 
                                 <div class="apagar-baixar-doc">
-                                    <button id="btn-limpar" type="reset"><img id="lixeira" src="img-lixeira.png"
-                                            alt=""></button>
 
-                                    <img id="img-produto" src="img-produto.png" alt="imagem representativa do produto">
+                                    <button id="btn-limpar" type="reset">
+                                        <img id="lixeira" src="img-lixeira.png" alt="">
+                                    </button>
+
+                                    <button type="button" class="visualizar-doc">
+                                        <a href="#" download>
+                                            <img id="img-olho-1" src="img-olho.png" alt="ícone de vizualização">
+                                        </a>
+                                    </button>
 
                                 </div>
 
@@ -260,13 +268,18 @@
 
                                 <div class="apagar-baixar-doc">
 
-                                    <button id="btn-limpar" type="reset"><img id="lixeira" src="img-lixeira.png"
-                                            alt=""></button>
-                                    <img id="img-produto" src="img-produto.png" alt="imagem representativa do produto">
+                                    <button id="btn-limpar" type="reset">
+                                        <img id="lixeira" src="img-lixeira.png" alt="">
+                                    </button>
 
+                                    <button type="button" class="visualizar-doc">
+                                        <a href="#" download>
+                                            <img id="img-olho-2" src="img-olho.png" alt="ícone de vizualização">
+                                        </a>
+                                    </button>
                                 </div>
 
-                                <p>Documento 1</p>
+                                <p>Documento 2</p>
 
                             </div>
                         </div>
@@ -278,7 +291,9 @@
             </form>
 
             <div class="geral-produto">
-                <button id="adicionar-produto">Incluir anexo</button>
+
+                <label for="adicionar-arquivo">Anexar arquivo</label>
+                    <input type="file" id="adicionar-arquivo">
             </div>
         </div>
 
