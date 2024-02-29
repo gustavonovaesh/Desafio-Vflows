@@ -10,225 +10,284 @@
 
 <body>
 
-    <!--Dados do fornecedor-->
-    <h1>Cadastro fornecedor/produto</h1>
-    <div class="info">
-        <form>
+    <div class="conteudo">
+
+        <!--Dados do fornecedor-->
+        <h1>Cadastro fornecedor/produto</h1>
+        <div class="info">
+            <form>
 
 
-            <div class="titulo">
-                <p>Dados do fornecedor</p>
-            </div>
+                <div class="titulo">
+                    <p>Dados do fornecedor</p>
+                </div>
 
-            <div class="empresa">
-                <ul>
-                    <li>
-                        <p>Razão social</p>
-                        <input type="text" id="razao-social">
-                    </li>
+                <div class="empresa">
+                    <ul>
+                        <li>
+                            <p>Razão social</p>
+                            <input type="text" id="razao-social">
+                        </li>
 
-                    <li>
-                        <p>CNPJ</p>
-                        <input type="text" id="cnpj">
-                    </li>
-                </ul>
-            </div>
+                        <li>
+                            <p>CNPJ</p>
+                            <input type="text" id="cnpj">
+                        </li>
+                    </ul>
+                </div>
 
-            <div class="nome">
-                <ul>
-                    <li>
-                        <p>Nome fantasia</p>
-                        <input type="text" id="nome-fantasia">
-                    </li>
-                    <li>
-                        <p>Inscrição estadual</p>
-                        <input type="text" id="inscricao-estadual">
-                    </li>
-                </ul>
-            </div>
+                <div class="nome">
+                    <ul>
+                        <li>
+                            <p>Nome fantasia</p>
+                            <input type="text" id="nome-fantasia">
+                        </li>
+                        <li>
+                            <p>Inscrição estadual</p>
+                            <input type="text" id="inscricao-estadual">
+                        </li>
+                    </ul>
+                </div>
 
-            <div class="cep">
-                <ul>
-                    <li>
-                        <p>CEP</p>
-                        <input type="text" id="cep-content">
-                    </li>
-                    <li>
-                        <p>Inscrição municipal</p>
-                        <input type="text" id="inscricao-municipal">
-                    </li>
-                </ul>
-            </div>
+                <div class="cep">
+                    <ul>
+                        <li>
+                            <p>CEP</p>
+                            <input type="text" id="cep-content">
+                        </li>
+                        <li>
+                            <p>Inscrição municipal</p>
+                            <input type="text" id="inscricao-municipal">
+                        </li>
+                    </ul>
+                </div>
 
-            <div class="endereco">
-                <ul>
-                    <li>
-                        <p>Endereço</p>
-                        <input type="text" id="endereco-content">
-                    </li>
-                    <li>
-                        <p>Número</p>
-                        <input type="text" id="numero">
-                    </li>
-                </ul>
-            </div>
+                <div class="endereco">
+                    <ul>
+                        <li>
+                            <p>Endereço</p>
+                            <input type="text" id="endereco-content">
+                        </li>
+                        <li>
+                            <p>Número</p>
+                            <input type="text" id="numero">
+                        </li>
+                    </ul>
+                </div>
 
-            <div class="complemento">
-                <p>Complemento</p>
-                <input type="text" id="complemento-content">
-            </div>
+                <div class="complemento">
+                    <p>Complemento</p>
+                    <input type="text" id="complemento-content">
+                </div>
 
-            <div class="endereco2">
-                <ul>
-                    <li>
-                        <p>Bairro</p>
-                        <input type="text" id="bairro">
-                    </li>
-                    <li>
-                        <p>Município</p>
-                        <input type="text" id="municipio">
-                    </li>
+                <div class="endereco2">
+                    <ul>
+                        <li>
+                            <p>Bairro</p>
+                            <input type="text" id="bairro">
+                        </li>
+                        <li>
+                            <p>Município</p>
+                            <input type="text" id="municipio">
+                        </li>
 
-                    <li>
-                        <p>Estado</p>
-                        <input type="text" id="estado">
-                    </li>
-                </ul>
-            </div>
+                        <li>
+                            <p>Estado</p>
+                            <input type="text" id="estado">
+                        </li>
+                    </ul>
+                </div>
 
-            <div class="pessoa">
-                <ul>
-                    <li>
-                        <p>Nome da pessoa de contato</p>
-                        <input type="text" id="nome-pessoa">
-                    </li>
-                    <li>
-                        <p>Telefone</p>
-                        <input type="text" id="telefone">
-                    </li>
+                <div class="pessoa">
+                    <ul>
+                        <li>
+                            <p>Nome da pessoa de contato</p>
+                            <input type="text" id="nome-pessoa">
+                        </li>
+                        <li>
+                            <p>Telefone</p>
+                            <input type="text" id="telefone">
+                        </li>
 
-                    <li>
-                        <p>E-mail</p>
-                        <input type="text" id="email">
-                    </li>
-                </ul>
-            </div>
+                        <li>
+                            <p>E-mail</p>
+                            <input type="text" id="email">
+                        </li>
+                    </ul>
+                </div>
 
-        </form>
-    </div>
-
-    <!--Cadastro dos produtos-->
-    <div class="produtos">
-        <form action="" id="form-produto-1">
-
-
-
-            <div class="titulo">
-                <p>Produtos</p>
-            </div>
-
-
-            <div class="geral-produto">
-
-
-                <button id="btn-limpar" type="reset"><img id="lixeira" src="img-lixeira.png" alt=""></button>
-
-                <fieldset id="produto">
-                    <legend>Produto - 1</legend>
-
-                    <img id="img-produto" src="img-produto.png" alt="imagem representativa do produto">
-
-                    <div class="info-produto">
-
-                        <div class="nome-produto">
-                            <p>Produto</p>
-                            <input type="text" id="produto1">
-                        </div>
-
-                        <div class="dados-produto">
-                            <ul>
-                                <li>
-                                    <p>UND. Medida</p>
-                                    <input type="number" id="medida">
-                                </li>
-
-                                <li>
-                                    <p>QDTDE. em estoque</p>
-                                    <input type="number" id="qtd-estoque">
-                                </li>
-
-                                <li>
-                                    <p>Valor unitário</p>
-                                    <input type="number" id="valor-unitario">
-                                </li>
-
-                                <li>
-                                    <p>Valor total</p>
-                                    <input type="number" id="valor-total">
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </fieldset>
-            </div>
-        </form>
-
-        <form action="" id="form-produto-2">
-            <div class="geral-produto">
-
-
-                <button id="btn-limpar" type="reset"><img id="lixeira" src="img-lixeira.png" alt=""></button>
-
-                <fieldset id="produto">
-                    <legend>Produto - 2</legend>
-
-                    <img id="img-produto" src="img-produto.png" alt="imagem representativa do produto">
-
-                    <div class="info-produto">
-
-                        <div class="nome-produto">
-                            <p>Produto</p>
-                            <input type="text" id="produto1">
-                        </div>
-
-                        <div class="dados-produto">
-                            <ul>
-                                <li>
-                                    <p>UND. Medida</p>
-                                    <input type="number" id="medida">
-                                </li>
-
-                                <li>
-                                    <p>QDTDE. em estoque</p>
-                                    <input type="number" id="qtd-estoque">
-                                </li>
-
-                                <li>
-                                    <p>Valor unitário</p>
-                                    <input type="number" id="valor-unitario">
-                                </li>
-
-                                <li>
-                                    <p>Valor total</p>
-                                    <input type="number" id="valor-total">
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </fieldset>
-            </div>
-        </form>
-
-        <div class="geral-produto">
-            <button id="adicionar-produto">Adicionar produto</button>
+            </form>
         </div>
 
+        <!--Cadastro dos produtos-->
+        <div class="produtos">
+            <form action="" id="form-produto-1">
+
+
+
+                <div class="titulo">
+                    <p>Produtos</p>
+                </div>
+
+
+                <div class="geral-produto">
+
+
+                    <button id="btn-limpar" type="reset"><img id="lixeira" src="img-lixeira.png" alt=""></button>
+
+                    <fieldset id="produto">
+                        <legend>Produto - 1</legend>
+
+                        <img id="img-produto" src="img-produto.png" alt="imagem representativa do produto">
+
+                        <div class="info-produto">
+
+                            <div class="nome-produto">
+                                <p>Produto</p>
+                                <input type="text" id="produto1">
+                            </div>
+
+                            <div class="dados-produto">
+                                <ul>
+                                    <li>
+                                        <p>UND. Medida</p>
+                                        <input type="number" id="medida">
+                                    </li>
+
+                                    <li>
+                                        <p>QDTDE. em estoque</p>
+                                        <input type="number" id="qtd-estoque">
+                                    </li>
+
+                                    <li>
+                                        <p>Valor unitário</p>
+                                        <input type="number" id="valor-unitario">
+                                    </li>
+
+                                    <li>
+                                        <p>Valor total</p>
+                                        <input type="number" id="valor-total">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+
+            <form action="" id="form-produto-2">
+                <div class="geral-produto">
+
+
+                    <button id="btn-limpar" type="reset"><img id="lixeira" src="img-lixeira.png" alt=""></button>
+
+                    <fieldset id="produto">
+                        <legend>Produto - 2</legend>
+
+                        <img id="img-produto" src="img-produto.png" alt="imagem representativa do produto">
+
+                        <div class="info-produto">
+
+                            <div class="nome-produto">
+                                <p>Produto</p>
+                                <input type="text" id="produto1">
+                            </div>
+
+                            <div class="dados-produto">
+                                <ul>
+                                    <li>
+                                        <p>UND. Medida</p>
+                                        <input type="number" id="medida">
+                                    </li>
+
+                                    <li>
+                                        <p>QDTDE. em estoque</p>
+                                        <input type="number" id="qtd-estoque">
+                                    </li>
+
+                                    <li>
+                                        <p>Valor unitário</p>
+                                        <input type="number" id="valor-unitario">
+                                    </li>
+
+                                    <li>
+                                        <p>Valor total</p>
+                                        <input type="number" id="valor-total">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+
+            <div class="geral-produto">
+                <button id="adicionar-produto">Adicionar produto</button>
+            </div>
+
+        </div>
+
+        <div class="produtos">
+            <form action="">
+
+
+                <div class="titulo">
+                    <p>Produtos</p>
+
+                </div>
+
+                <div class="geral-produto">
+
+                    <fieldset id="produto">
+                        <legend>Itens</legend>
+
+                        <div class="anexo">
+                            <div class="iten">
+
+                                <div class="apagar-baixar-doc">
+                                    <button id="btn-limpar" type="reset"><img id="lixeira" src="img-lixeira.png"
+                                            alt=""></button>
+
+                                    <img id="img-produto" src="img-produto.png" alt="imagem representativa do produto">
+
+                                </div>
+
+                                <p>Documento 1</p>
+
+                            </div>
+
+                            <div class="iten">
+
+                                <div class="apagar-baixar-doc">
+
+                                    <button id="btn-limpar" type="reset"><img id="lixeira" src="img-lixeira.png"
+                                            alt=""></button>
+                                    <img id="img-produto" src="img-produto.png" alt="imagem representativa do produto">
+
+                                </div>
+
+                                <p>Documento 1</p>
+
+                            </div>
+                        </div>
+
+
+                    </fieldset>
+                </div>
+
+            </form>
+
+            <div class="geral-produto">
+                <button id="adicionar-produto">Incluir anexo</button>
+            </div>
+        </div>
+
+
+        <button id="salvar-fornecedor">Salvar fornecedor</button>
+
+
+
     </div>
-
-    
-
-
-
 
 
 </body>
