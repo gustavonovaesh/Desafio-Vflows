@@ -14,118 +14,117 @@
 
         <!--Dados do fornecedor-->
         <h1>Cadastro fornecedor/produto</h1>
-        <div class="info">
-            <form>
 
 
-                <div class="titulo">
-                    <p>Dados do fornecedor</p>
-                </div>
+        <form id="formulario">
 
-                <div class="empresa">
-                    <ul>
-                        <li>
-                            <p>Razão social</p>
-                            <input type="text" id="razao-social">
-                        </li>
+            <fieldset class="sessao">
 
-                        <li>
-                            <p>CNPJ</p>
-                            <input type="text" id="cnpj">
-                        </li>
-                    </ul>
-                </div>
+                <p class="titulo-sessao">Dados do fornecedor</p>
 
-                <div class="nome">
-                    <ul>
-                        <li>
-                            <p>Nome fantasia</p>
-                            <input type="text" id="nome-fantasia">
-                        </li>
-                        <li>
-                            <p>Inscrição estadual</p>
-                            <input type="text" id="inscricao-estadual">
-                        </li>
-                    </ul>
-                </div>
+                <p>
+                    <label for="razao-social">
+                        <span>Razão social</span>
+                        <input type="text" id="razao-social">
+                    </label>
 
-                <div class="cep">
-                    <ul>
-                        <li>
-                            <p>CEP</p>
-                            <input type="text" id="cep-content">
-                        </li>
-                        <li>
-                            <p>Inscrição municipal</p>
-                            <input type="text" id="inscricao-municipal">
-                        </li>
-                    </ul>
-                </div>
+                    <label for="cnpj">
+                        <span>CNPJ</span>
+                        <input type="text" id="cnpj">
+                    </label>
+                <p>
 
-                <div class="endereco">
-                    <ul>
-                        <li>
-                            <p>Endereço</p>
-                            <input type="text" id="endereco-content">
-                        </li>
-                        <li>
-                            <p>Número</p>
-                            <input type="text" id="numero">
-                        </li>
-                    </ul>
-                </div>
+                <p>
+                    <label for="nome-fantasia">
+                        <span>Nome fantasia</span>
+                        <input type="text" id="nome-fantasia">
+                    </label>
 
-                <div class="complemento">
-                    <p>Complemento</p>
-                    <input type="text" id="complemento-content">
-                </div>
+                    <label for="inscricao-estadual">
+                        <span>Inscrição estadual</span>
+                        <input type="text" id="inscricao-estadual">
+                    </label>
+                </p>
 
-                <div class="endereco2">
-                    <ul>
-                        <li>
-                            <p>Bairro</p>
-                            <input type="text" id="bairro">
-                        </li>
-                        <li>
-                            <p>Município</p>
-                            <input type="text" id="municipio">
-                        </li>
+                <p>
+                    <label for="cep">
+                        <span>CEP</span>
+                        <input type="text" id="cep">
+                    </label>
 
-                        <li>
-                            <p>Estado</p>
-                            <input type="text" id="estado">
-                        </li>
-                    </ul>
-                </div>
+                    <label for="inscricao-municipal">
+                        <span>Inscrição municipal</span>
+                        <input type="text" id="inscricao-municipal">
+                    </label>
+                </p>
 
-                <div class="pessoa">
-                    <ul>
-                        <li>
-                            <p>Nome da pessoa de contato</p>
-                            <input type="text" id="nome-pessoa">
-                        </li>
-                        <li>
-                            <p>Telefone</p>
-                            <input type="text" id="telefone">
-                        </li>
+                <p>
+                    <label for="endereco">
+                        <span>Endereço</span>
+                        <input type="text" id="endereco">
+                    </label>
 
-                        <li>
-                            <p>E-mail</p>
-                            <input type="text" id="email">
-                        </li>
-                    </ul>
-                </div>
+                    <label for="numero">
+                        <span>Número</span>
+                        <input type="text" id="numero">
+                    </label>
+                </p>
 
-            </form>
-        </div>
+                <p>
+
+                    <label for="complemento">
+                        <span>Complemento</span>
+                        <input type="text" id="complemento">
+                    </label>
+                </p>
+
+                <p>
+                    <label for="bairro">
+                        <span>Bairro</span>
+                        <input type="text" id="bairro">
+                    </label>
+
+                    <label for="municipio">
+                        <span>Município</span>
+                        <input type="text" id="municipio">
+                    </label>
+
+                    <label for="estado">
+                        <span>Estado</span>
+                        <input type="text" id="estado">
+                    </label>
+                </p>
+
+                <p>
+                    <label for="nome-pessoa">
+                        <span>Nome da pessoa de contato</span>
+                        <input type="text" id="nome-pessoa">
+                    </label>
+
+                    <label>
+                        <span>Telefone</span>
+                        <input type="text" id="telefone">
+                    </label>
+
+                    <label for="email">
+                        <span>E-mail</span>
+                        <input type="text" id="email">
+                    </label>
+                </p>
+
+
+            </fieldset>
+
+        </form>
+
 
         <!--Cadastro dos produtos-->
-        <div class="produtos">
+        <div class="sessao">
             <form action="" id="form-produto-1">
 
 
 
-                <div class="titulo">
+                <div class="titulo-sessao">
                     <p>Produtos</p>
                 </div>
 
@@ -229,13 +228,12 @@
 
         <!--Anexos-->
 
-        <div class="produtos">
+        <div class="sessao">
             <form action="">
 
 
-                <div class="titulo">
+                <div class="titulo-sessao">
                     <p>Anexos</p>
-
                 </div>
 
                 <div class="geral-produto">
@@ -293,7 +291,7 @@
             <div class="geral-produto">
 
                 <label for="adicionar-arquivo">Anexar arquivo</label>
-                    <input type="file" id="adicionar-arquivo">
+                <input type="file" id="adicionar-arquivo">
             </div>
         </div>
 
