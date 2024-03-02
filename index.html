@@ -111,120 +111,66 @@
                         <input type="text" id="email">
                     </label>
                 </p>
-
-
             </fieldset>
-
         </form>
 
 
         <!--Cadastro dos produtos-->
-        <div class="sessao">
-            <form action="" id="form-produto-1">
+        <form action="" class="sessao" id="formulario-produto">
+
+            <p class="titulo-sessao">Produtos</p>
+
+            <div class="produto">
 
 
+                <button id="btn-limpar" type="reset"><img id="img-lixeira" src="img-lixeira.png" alt=""></button>
 
-                <div class="titulo-sessao">
-                    <p>Produtos</p>
-                </div>
+                <fieldset class="conteudo-fieldset">
 
+                    <legend>Produto - 1</legend>
 
-                <div class="geral-produto">
+                    <img id="img-produto" src="img-produto.png" alt="imagem representativa do produto">
+                    
+                    <div class="info-fieldset">
+                        <p>
 
-
-                    <button id="btn-limpar" type="reset"><img id="lixeira" src="img-lixeira.png" alt=""></button>
-
-                    <fieldset id="produto">
-                        <legend>Produto - 1</legend>
-
-                        <img id="img-produto" src="img-produto.png" alt="imagem representativa do produto">
-
-                        <div class="info-produto">
-
-                            <div class="nome-produto">
-                                <p>Produto</p>
+                            <label for="produto1">
+                                <span>Produto</span>
                                 <input type="text" id="produto1">
-                            </div>
+                            </label>
+                        </p>
 
-                            <div class="dados-produto">
-                                <ul>
-                                    <li>
-                                        <p>UND. Medida</p>
-                                        <input type="number" id="medida">
-                                    </li>
+                        <p>
+                            <label>
+                                <span>UND. Medida</span>
+                                <input class="dados-produto" type="number" id="medida">
+                            </label>
 
-                                    <li>
-                                        <p>QDTDE. em estoque</p>
-                                        <input type="number" id="qtd-estoque">
-                                    </li>
+                            <label>
+                                <span>QDTDE. em estoque</span>
+                                <input class="dados-produto" type="number" id="qtd-estoque">
+                            </label>
 
-                                    <li>
-                                        <p>Valor unitário</p>
-                                        <input type="number" id="valor-unitario">
-                                    </li>
+                            <label>
+                                <span>Valor unitário</span>
+                                <input class="dados-produto" type="number" id="valor-unitario">
+                            </label>
 
-                                    <li>
-                                        <p>Valor total</p>
-                                        <input type="number" id="valor-total">
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </fieldset>
-                </div>
-            </form>
-
-            <form action="" id="form-produto-2">
-                <div class="geral-produto">
+                            <label>
+                                <span>Valor total</span>
+                                <input class="dados-produto" type="number" id="valor-total">
+                            </label>
+                        </p>
+                    </div>
+                </fieldset>
+            </div>
 
 
-                    <button id="btn-limpar" type="reset"><img id="lixeira" src="img-lixeira.png" alt=""></button>
-
-                    <fieldset id="produto">
-                        <legend>Produto - 2</legend>
-
-                        <img id="img-produto" src="img-produto.png" alt="imagem representativa do produto">
-
-                        <div class="info-produto">
-
-                            <div class="nome-produto">
-                                <p>Produto</p>
-                                <input type="text" id="produto1">
-                            </div>
-
-                            <div class="dados-produto">
-                                <ul>
-                                    <li>
-                                        <p>UND. Medida</p>
-                                        <input type="number" id="medida">
-                                    </li>
-
-                                    <li>
-                                        <p>QDTDE. em estoque</p>
-                                        <input type="number" id="qtd-estoque">
-                                    </li>
-
-                                    <li>
-                                        <p>Valor unitário</p>
-                                        <input type="number" id="valor-unitario">
-                                    </li>
-
-                                    <li>
-                                        <p>Valor total</p>
-                                        <input type="number" id="valor-total">
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </fieldset>
-                </div>
-            </form>
 
             <div class="geral-produto">
                 <button id="adicionar-produto">Adicionar produto</button>
             </div>
-
-        </div>
+        </form>
 
         <!--Anexos-->
 
@@ -247,7 +193,7 @@
                                 <div class="apagar-baixar-doc">
 
                                     <button id="btn-limpar" type="reset">
-                                        <img id="lixeira" src="img-lixeira.png" alt="">
+                                        <img id="img-lixeira" src="img-lixeira.png" alt="">
                                     </button>
 
                                     <button type="button" class="visualizar-doc">
@@ -267,7 +213,7 @@
                                 <div class="apagar-baixar-doc">
 
                                     <button id="btn-limpar" type="reset">
-                                        <img id="lixeira" src="img-lixeira.png" alt="">
+                                        <img id="img-lixeira" src="img-lixeira.png" alt="">
                                     </button>
 
                                     <button type="button" class="visualizar-doc">
@@ -300,9 +246,10 @@
 
 
 
+
+
+
     </div>
-
-
 </body>
 
 </html>

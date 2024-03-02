@@ -96,55 +96,46 @@ textarea:focus, input:focus {
 
 /*Produtos*/
 
-#produto1{
-    width: 97%;
+.produto{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+    width: 100%;
 }
 
-#medida, #qtd-estoque, #valor-unitario, #valor-total{
+.conteudo-fieldset{
+  display: flex;  
+}
+
+.info-fieldset{
+    display: block;
+}
+
+#produto1{
+    width: 500px;
+}
+
+.dados-produto{
     width: 150px;
-    padding: 0px 0px 0px 10px;
 }
 
 #img-produto{
     width: 120px;
 }
 
-.geral-produto{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 0px 10px 0px;
-}
-
-.dados-produto ul li{
-    margin: 10px 10px 0px 0px;
+#img-lixeira{
+    width: 50px;
 }
 
 #btn-limpar{
     border: none;
     background-color: transparent;
     margin: 0px 10px 0px 0px;
-}
-
-#btn-limpar:hover{
-    cursor: pointer; 
-}
-
-#lixeira{
-    width: 50px;
-}
-
-#produto{
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    width: 90%;
-    padding: 10px;
+    cursor: pointer;
 }
 
 #adicionar-produto{
-
     background-color: green;
     color: white;
     border-radius: 3px;
@@ -153,14 +144,10 @@ textarea:focus, input:focus {
     border: none;
     font-size: 14pt;
     margin: 0px 0px 20px 0px;
-}
-
-#adicionar-produto:hover{
     cursor: pointer;
 }
 
 /*Anexos*/
-
 .iten{
     display: flex;
     align-items: center;
