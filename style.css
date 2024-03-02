@@ -59,6 +59,8 @@ h1{
     font-size: 12pt;
 }
 
+
+
 textarea:focus, input:focus {
     box-shadow: 0px 0.5px 1px 0px rgb(0, 0, 0);
     outline: 0;
@@ -95,7 +97,6 @@ textarea:focus, input:focus {
 
 
 /*Produtos*/
-
 .produto{
     display: flex;
     align-items: center;
@@ -112,30 +113,26 @@ textarea:focus, input:focus {
     display: block;
 }
 
-#produto1{
-    width: 500px;
-}
-
 .dados-produto{
     width: 150px;
 }
 
-#img-produto{
+.img-produto{
     width: 120px;
 }
 
-#img-lixeira{
+.img-lixeira{
     width: 50px;
 }
 
-#btn-limpar{
+.btn-limpar{
     border: none;
     background-color: transparent;
     margin: 0px 10px 0px 0px;
     cursor: pointer;
 }
 
-#adicionar-produto{
+.adicionar-produto{
     background-color: green;
     color: white;
     border-radius: 3px;
@@ -146,6 +143,19 @@ textarea:focus, input:focus {
     margin: 0px 0px 20px 0px;
     cursor: pointer;
 }
+
+.sessao .btn-formulario{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
 
 /*Anexos*/
 .iten{

@@ -32,7 +32,7 @@
                         <span>CNPJ</span>
                         <input type="text" id="cnpj">
                     </label>
-                <p>
+                </p>
 
                 <p>
                     <label for="nome-fantasia">
@@ -114,7 +114,6 @@
             </fieldset>
         </form>
 
-
         <!--Cadastro dos produtos-->
         <form action="" class="sessao" id="formulario-produto">
 
@@ -122,61 +121,100 @@
 
             <div class="produto">
 
-
-                <button id="btn-limpar" type="reset"><img id="img-lixeira" src="img-lixeira.png" alt=""></button>
+                <button class="btn-limpar" type="reset"><img class="img-lixeira" src="img-lixeira.png" alt=""></button>
 
                 <fieldset class="conteudo-fieldset">
 
                     <legend>Produto - 1</legend>
 
-                    <img id="img-produto" src="img-produto.png" alt="imagem representativa do produto">
-                    
+                    <img class="img-produto" src="img-produto.png" alt="imagem representativa do produto">
+
                     <div class="info-fieldset">
                         <p>
-
-                            <label for="produto1">
+                            <label for="produto-1">
                                 <span>Produto</span>
-                                <input type="text" id="produto1">
+                                <input type="text" id="produto-1">
                             </label>
                         </p>
 
                         <p>
                             <label>
                                 <span>UND. Medida</span>
-                                <input class="dados-produto" type="number" id="medida">
+                                <input class="dados-produto" type="number" id="medida-1">
                             </label>
 
                             <label>
                                 <span>QDTDE. em estoque</span>
-                                <input class="dados-produto" type="number" id="qtd-estoque">
+                                <input class="dados-produto" type="number" id="qtd-estoque-1">
                             </label>
 
                             <label>
                                 <span>Valor unitário</span>
-                                <input class="dados-produto" type="number" id="valor-unitario">
+                                <input class="dados-produto" type="number" id="valor-unitario-1">
                             </label>
 
                             <label>
                                 <span>Valor total</span>
-                                <input class="dados-produto" type="number" id="valor-total">
+                                <input class="dados-produto" type="number" id="valor-total-1">
                             </label>
                         </p>
                     </div>
                 </fieldset>
             </div>
 
+            <div class="produto">
 
+                <button class="btn-limpar" type="reset"><img class="img-lixeira" src="img-lixeira.png" alt=""></button>
 
-            <div class="geral-produto">
-                <button id="adicionar-produto">Adicionar produto</button>
+                <fieldset class="conteudo-fieldset">
+
+                    <legend>Produto - 2</legend>
+
+                    <img class="img-produto" src="img-produto.png" alt="imagem representativa do produto">
+
+                    <div class="info-fieldset">
+                        <p>
+                            <label for="produto-2">
+                                <span>Produto</span>
+                                <input type="text" id="produto-2">
+                            </label>
+                        </p>
+
+                        <p>
+                            <label>
+                                <span>UND. Medida</span>
+                                <input class="dados-produto" type="number" id="medida-2">
+                            </label>
+
+                            <label>
+                                <span>QDTDE. em estoque</span>
+                                <input class="dados-produto" type="number" id="qtd-estoque-2">
+                            </label>
+
+                            <label>
+                                <span>Valor unitário</span>
+                                <input class="dados-produto" type="number" id="valor-unitario-2">
+                            </label>
+
+                            <label>
+                                <span>Valor total</span>
+                                <input class="dados-produto" type="number" id="valor-total-2">
+                            </label>
+                        </p>
+                    </div>
+                </fieldset>
             </div>
+
+            <p class="btn-formulario">
+                <button class="adicionar-produto">Adicionar produto</button>
+            </p>
+
         </form>
+        
 
         <!--Anexos-->
-
         <div class="sessao">
             <form action="">
-
 
                 <div class="titulo-sessao">
                     <p>Anexos</p>
@@ -192,8 +230,8 @@
 
                                 <div class="apagar-baixar-doc">
 
-                                    <button id="btn-limpar" type="reset">
-                                        <img id="img-lixeira" src="img-lixeira.png" alt="">
+                                    <button class="btn-limpar" type="reset">
+                                        <img class="img-lixeira" src="img-lixeira.png" alt="">
                                     </button>
 
                                     <button type="button" class="visualizar-doc">
@@ -212,8 +250,8 @@
 
                                 <div class="apagar-baixar-doc">
 
-                                    <button id="btn-limpar" type="reset">
-                                        <img id="img-lixeira" src="img-lixeira.png" alt="">
+                                    <button class="btn-limpar" type="reset">
+                                        <img class="img-lixeira" src="img-lixeira.png" alt="">
                                     </button>
 
                                     <button type="button" class="visualizar-doc">
