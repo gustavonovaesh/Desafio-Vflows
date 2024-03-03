@@ -20,7 +20,7 @@
 
             <fieldset class="sessao">
 
-                <p class="titulo-sessao">Dados do fornecedor</p>
+                <h2 class="titulo-sessao">Dados do fornecedor</h2>
 
                 <p>
                     <label for="razao-social">
@@ -117,7 +117,7 @@
         <!--Cadastro dos produtos-->
         <form action="" class="sessao" id="formulario-produto">
 
-            <p class="titulo-sessao">Produtos</p>
+            <h2 class="titulo-sessao">Produtos</h2>
 
             <div class="produto">
 
@@ -205,87 +205,72 @@
                 </fieldset>
             </div>
 
-            <p class="btn-formulario">
-                <button class="adicionar-produto">Adicionar produto</button>
-            </p>
+            <input type="button" class="btn-formulario" value="Adicionar produto">
 
         </form>
-        
+
 
         <!--Anexos-->
-        <div class="sessao">
-            <form action="">
 
-                <div class="titulo-sessao">
-                    <p>Anexos</p>
-                </div>
+        <form action="" class="sessao">
 
-                <div class="geral-produto">
+            <h2 class="titulo-sessao">Anexos</h2>
 
-                    <fieldset id="produto">
-                        <legend>Itens</legend>
+            <div class="produto">
 
-                        <div class="anexo">
-                            <div class="iten">
+                <fieldset class="conteudo-fieldset">
+                    <legend>Itens</legend>
 
-                                <div class="apagar-baixar-doc">
+                    <div class="info-fieldset">
 
-                                    <button class="btn-limpar" type="reset">
-                                        <img class="img-lixeira" src="img-lixeira.png" alt="">
-                                    </button>
+                        <p>
+                            <label>
+                                <button class="btn-limpar" type="reset">
+                                    <img class="img-lixeira" src="img-lixeira.png" alt="">
+                                </button>
+                            </label>
 
-                                    <button type="button" class="visualizar-doc">
-                                        <a href="#" download>
-                                            <img id="img-olho-1" src="img-olho.png" alt="ícone de vizualização">
-                                        </a>
-                                    </button>
+                            <label>
+                                <button type="button" class="visualizar-doc">
+                                    <a href="#" download>
+                                        <img id="img-olho-1" src="img-olho.png" alt="ícone de vizualização">
+                                    </a>
+                                </button>
+                            </label>
 
-                                </div>
+                            <span>Documento 1</span>
 
-                                <p>Documento 1</p>
+                        </p>
 
-                            </div>
+                        <p>
 
-                            <div class="iten">
+                            <label>
+                                <button class="btn-limpar" type="reset">
+                                    <img class="img-lixeira" src="img-lixeira.png" alt="">
+                                </button>
+                            </label>
 
-                                <div class="apagar-baixar-doc">
+                            <label>
+                                <button type="button" class="visualizar-doc">
+                                    <a href="#" download>
+                                        <img id="img-olho-2" src="img-olho.png" alt="ícone de vizualização">
+                                    </a>
+                                </button>
+                            </label>
 
-                                    <button class="btn-limpar" type="reset">
-                                        <img class="img-lixeira" src="img-lixeira.png" alt="">
-                                    </button>
-
-                                    <button type="button" class="visualizar-doc">
-                                        <a href="#" download>
-                                            <img id="img-olho-2" src="img-olho.png" alt="ícone de vizualização">
-                                        </a>
-                                    </button>
-                                </div>
-
-                                <p>Documento 2</p>
-
-                            </div>
-                        </div>
-
-
-                    </fieldset>
-                </div>
-
-            </form>
-
-            <div class="geral-produto">
-
-                <label for="adicionar-arquivo">Anexar arquivo</label>
-                <input type="file" id="adicionar-arquivo">
+                            <span>Documento 2</span>
+                        </p>
+                    </div>
+                </fieldset>
             </div>
-        </div>
 
+                <label for="adicionar-arquivo" class="btn-formulario">Anexar arquivo</label>
+                <input type="file" id="adicionar-arquivo">
+            
 
-        <button id="salvar-fornecedor">Salvar fornecedor</button>
+        </form>
 
-
-
-
-
+        <input type="submit" value="Salvar fornecedor" id="salvar-fornecedor" class="btn-formulario">
 
     </div>
 </body>
