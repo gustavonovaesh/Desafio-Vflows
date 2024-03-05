@@ -28,7 +28,7 @@ h1{
 
 .titulo-sessao{
     display: flex;
-    background-color: rgb(32, 130, 223);
+    background-color: rgb(37, 115, 189);
     width: 103%;
     color: white;
     height: 40px;
@@ -131,7 +131,7 @@ label input:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
+    background-color: rgb(42, 172, 25);
     color: white;
     border-radius: 3px;
     width: 40%;
