@@ -15,103 +15,100 @@
         <!--Dados do fornecedor-->
         <h1>Cadastro fornecedor/produto</h1>
 
+        <form id="formulario" class="sessao">
 
-        <form id="formulario">
+            <h2 class="titulo-sessao">Dados do fornecedor</h2>
 
-            <fieldset class="sessao">
+            <div class="dados-input">
 
-                <h2 class="titulo-sessao">Dados do fornecedor</h2>
+                <label for="razao-social">
+                    <span>Razão social</span>
+                    <input type="text" id="razao-social" class="tam-input-g">
+                </label>
 
-                <p>
-                    <label for="razao-social">
-                        <span>Razão social</span>
-                        <input type="text" id="razao-social">
-                    </label>
+                <label for="cnpj">
+                    <span>CNPJ</span>
+                    <input type="text" class="tam-input-m" id="cnpj">
+                </label>
+            </div>
 
-                    <label for="cnpj">
-                        <span>CNPJ</span>
-                        <input type="text" id="cnpj">
-                    </label>
-                </p>
+            <div class="dados-input">
+                <label for="nome-fantasia">
+                    <span>Nome fantasia</span>
+                    <input type="text" class="tam-input-g" id="nome-fantasia">
+                </label>
 
-                <p>
-                    <label for="nome-fantasia">
-                        <span>Nome fantasia</span>
-                        <input type="text" id="nome-fantasia">
-                    </label>
+                <label for="inscricao-estadual">
+                    <span>Inscrição estadual</span>
+                    <input type="text" class="tam-input-m" id="inscricao-estadual">
+                </label>
+            </div>
 
-                    <label for="inscricao-estadual">
-                        <span>Inscrição estadual</span>
-                        <input type="text" id="inscricao-estadual">
-                    </label>
-                </p>
+            <div class="dados-input">
+                <label for="cep">
+                    <span>CEP</span>
+                    <input type="text" class="tam-input-m" id="cep">
+                </label>
 
-                <p>
-                    <label for="cep">
-                        <span>CEP</span>
-                        <input type="text" id="cep">
-                    </label>
+                <label for="inscricao-municipal">
+                    <span>Inscrição municipal</span>
+                    <input type="text" class="tam-input-m" id="inscricao-municipal">
+                </label>
+            </div>
 
-                    <label for="inscricao-municipal">
-                        <span>Inscrição municipal</span>
-                        <input type="text" id="inscricao-municipal">
-                    </label>
-                </p>
+            <div class="dados-input">
+                <label for="endereco">
+                    <span>Endereço</span>
+                    <input type="text" class="tam-input-g" id="endereco">
+                </label>
 
-                <p>
-                    <label for="endereco">
-                        <span>Endereço</span>
-                        <input type="text" id="endereco">
-                    </label>
+                <label for="numero">
+                    <span>Número</span>
+                    <input type="text" class="tam-input-m" id="numero">
+                </label>
+            </div>
 
-                    <label for="numero">
-                        <span>Número</span>
-                        <input type="text" id="numero">
-                    </label>
-                </p>
+            <div class="dados-input">
 
-                <p>
+                <label for="complemento">
+                    <span>Complemento</span>
+                    <input type="text" class="tam-input-g" id="complemento">
+                </label>
+            </div>
 
-                    <label for="complemento">
-                        <span>Complemento</span>
-                        <input type="text" id="complemento">
-                    </label>
-                </p>
+            <div class="dados-input">
+                <label for="bairro">
+                    <span>Bairro</span>
+                    <input type="text" class="tam-input-m" id="bairro">
+                </label>
 
-                <p>
-                    <label for="bairro">
-                        <span>Bairro</span>
-                        <input type="text" id="bairro">
-                    </label>
+                <label for="municipio">
+                    <span>Município</span>
+                    <input type="text" class="tam-input-m" id="municipio">
+                </label>
 
-                    <label for="municipio">
-                        <span>Município</span>
-                        <input type="text" id="municipio">
-                    </label>
+                <label for="estado">
+                    <span>Estado</span>
+                    <input type="text" class="tam-input-m" id="estado">
+                </label>
+            </div>
 
-                    <label for="estado">
-                        <span>Estado</span>
-                        <input type="text" id="estado">
-                    </label>
-                </p>
+            <div class="dados-input">
+                <label for="nome-pessoa">
+                    <span>Nome da pessoa de contato</span>
+                    <input type="text" class="tam-input-m" id="nome-pessoa">
+                </label>
 
-                <p>
-                    <label for="nome-pessoa">
-                        <span>Nome da pessoa de contato</span>
-                        <input type="text" id="nome-pessoa">
-                    </label>
+                <label>
+                    <span>Telefone</span>
+                    <input type="text" class="tam-input-p" id="telefone">
+                </label>
 
-                    <label>
-                        <span>Telefone</span>
-                        <input type="text" id="telefone">
-                    </label>
-
-                    <label for="email">
-                        <span>E-mail</span>
-                        <input type="text" id="email">
-                    </label>
-                </p>
-            </fieldset>
+                <label for="email">
+                    <span>E-mail</span>
+                    <input type="text" class="tam-input-m" id="email">
+                </label>
+            </div>
         </form>
 
         <!--Cadastro dos produtos-->
@@ -119,6 +116,7 @@
 
             <h2 class="titulo-sessao">Produtos</h2>
 
+            <!--Produto 1-->
             <div class="produto">
 
                 <button class="btn-limpar" type="reset"><img class="img-lixeira" src="img-lixeira.png" alt=""></button>
@@ -130,38 +128,40 @@
                     <img class="img-produto" src="img-produto.png" alt="imagem representativa do produto">
 
                     <div class="info-fieldset">
-                        <p>
+
+                        <div class="dados-input">
                             <label for="produto-1">
                                 <span>Produto</span>
-                                <input type="text" id="produto-1">
+                                <input type="text" class="tam-input-g" id="produto-1">
                             </label>
-                        </p>
+                        </div>
 
-                        <p>
-                            <label>
+                        <div class="dados-input">
+                            <label for="medida-1">
                                 <span>UND. Medida</span>
-                                <input class="dados-produto" type="number" id="medida-1">
+                                <input type="number" class="tam-input-p" id="medida-1">
                             </label>
 
-                            <label>
+                            <label for="qtd-estoque-1">
                                 <span>QDTDE. em estoque</span>
-                                <input class="dados-produto" type="number" id="qtd-estoque-1">
+                                <input type="number" class="tam-input-p" id="qtd-estoque-1">
                             </label>
 
-                            <label>
+                            <label for="valor-unitario-1">
                                 <span>Valor unitário</span>
-                                <input class="dados-produto" type="number" id="valor-unitario-1">
+                                <input type="number" class="tam-input-p" id="valor-unitario-1">
                             </label>
 
-                            <label>
+                            <label for="valor-total-1">
                                 <span>Valor total</span>
-                                <input class="dados-produto" type="number" id="valor-total-1">
+                                <input type="number" class="tam-input-p" id="valor-total-1">
                             </label>
-                        </p>
+                        </div>
                     </div>
                 </fieldset>
             </div>
 
+            <!--Produto 2-->
             <div class="produto">
 
                 <button class="btn-limpar" type="reset"><img class="img-lixeira" src="img-lixeira.png" alt=""></button>
@@ -173,45 +173,44 @@
                     <img class="img-produto" src="img-produto.png" alt="imagem representativa do produto">
 
                     <div class="info-fieldset">
-                        <p>
+
+                        <div class="dados-input">
                             <label for="produto-2">
                                 <span>Produto</span>
-                                <input type="text" id="produto-2">
+                                <input type="text" class="tam-input-g" id="produto-2">
                             </label>
-                        </p>
+                        </div>
 
-                        <p>
+                        <div class="dados-input">
                             <label>
                                 <span>UND. Medida</span>
-                                <input class="dados-produto" type="number" id="medida-2">
+                                <input type="number" class="tam-input-p" id="medida-2">
                             </label>
 
                             <label>
                                 <span>QDTDE. em estoque</span>
-                                <input class="dados-produto" type="number" id="qtd-estoque-2">
+                                <input type="number" class="tam-input-p" id="qtd-estoque-2">
                             </label>
 
                             <label>
                                 <span>Valor unitário</span>
-                                <input class="dados-produto" type="number" id="valor-unitario-2">
+                                <input type="number" class="tam-input-p" id="valor-unitario-2">
                             </label>
 
                             <label>
                                 <span>Valor total</span>
-                                <input class="dados-produto" type="number" id="valor-total-2">
+                                <input type="number" class="tam-input-p" id="valor-total-2">
                             </label>
-                        </p>
+                        </div>
                     </div>
                 </fieldset>
             </div>
 
-            <input type="button" class="btn-formulario" value="Adicionar produto">
+            <input type="button" id="adicionar-produto" class="btn-formulario" value="Adicionar produto">
 
         </form>
 
-
         <!--Anexos-->
-
         <form action="" class="sessao">
 
             <h2 class="titulo-sessao">Anexos</h2>
@@ -223,7 +222,7 @@
 
                     <div class="info-fieldset">
 
-                        <p>
+                        <div class="dados-input">
                             <label>
                                 <button class="btn-limpar" type="reset">
                                     <img class="img-lixeira" src="img-lixeira.png" alt="">
@@ -239,10 +238,9 @@
                             </label>
 
                             <span>Documento 1</span>
+                        </div>
 
-                        </p>
-
-                        <p>
+                        <div class="dados-input">
 
                             <label>
                                 <button class="btn-limpar" type="reset">
@@ -259,20 +257,16 @@
                             </label>
 
                             <span>Documento 2</span>
-                        </p>
+                        </div>
                     </div>
                 </fieldset>
             </div>
 
-                <label for="adicionar-arquivo" class="btn-formulario">Anexar arquivo</label>
-                <input type="file" id="adicionar-arquivo">
-            
+            <label for="adicionar-arquivo" class="btn-formulario">Anexar arquivo</label>
+            <input type="file" id="adicionar-arquivo">
 
         </form>
-
         <input type="submit" value="Salvar fornecedor" id="salvar-fornecedor" class="btn-formulario">
-
     </div>
 </body>
-
 </html>

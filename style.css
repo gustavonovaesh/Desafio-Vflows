@@ -29,12 +29,12 @@ h1{
 .titulo-sessao{
     display: flex;
     background-color: rgb(32, 130, 223);
-    width: 99.1%;
+    width: 103%;
     color: white;
     height: 40px;
     align-items: center;
     border-radius: 8px 8px 0px 0px; 
-    padding: 0px 0px 0px 1%;
+    padding: 0px 0px 0px 10px;
     font-size: 12pt;
 }
 
@@ -43,69 +43,59 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid rgb(104, 104, 104) 1px;
-    border-radius: 10px;
     width: 50%;
     margin-bottom: 15px;
-    padding-bottom: 10px;
+    padding: 0px 20px 10px 20px;
+    border: transparent;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px 0px rgb(172, 172, 172);
+    
 }
 
-/*Organização dos campos*/
-.sessao p label{
-    padding: 5px 10px 5px 7px;
-}
-
-.sessao p{
+.dados-input{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-}
-
-.sessao input{
-    display: block;
-    border-radius: 6px;
-    height: 30px;
-    border: solid rgb(173, 173, 173) 1px;
-    padding: 0px 4px 0px 4px;
-    font-size: 12pt;
-    
+    margin: 0px 5px 0px 5px;
+    padding: 5px 5px 5px 5px;
 }
 
 label input:focus {
-    box-shadow: 0px 0.5px 1px 0px rgb(0, 0, 0);
+    box-shadow: 0px 0.5px 1px 0px rgb(117, 117, 117);
     outline: 0;
 }
 
-/*Tamanhos de cada campo*/
-#razao-social, #nome-fantasia, #endereco{
+/*Tamanhos e estilo dos campos input*/
+.tam-input-g{
+    display: block;
+    padding: 0px 0px 0px 5px;
+    border-radius: 6px;
+    height: 30px;
+    border: solid rgb(173, 173, 173) 1px;
+    font-size: 12pt;
     width: 600px;
 }
 
-#cnpj, #cep, #inscricao-municipal, #inscricao-estadual, #numero{
+.tam-input-m{
+    display: block;
+    padding: 0px 0px 0px 5px;
+    border-radius: 6px;
+    height: 30px;
+    border: solid rgb(173, 173, 173) 1px;
+    font-size: 12pt;
     width: 300px;
 }
 
-#complemento{
-    width: 800px;
-}
-
-#bairro, #municipio, #estado{
-    width: 280px;
-}
-
-#nome-pessoa{
-    width: 350px;
-}
-
-#telefone{
+.tam-input-p{
+    display: block;
+    padding: 0px 0px 0px 5px;
+    border-radius: 6px;
+    height: 30px;
+    border: solid rgb(173, 173, 173) 1px;
+    font-size: 12pt;
     width: 150px;
 }
-
-#email{
-    width: 300px;
-}
-
 
 /*Produtos*/
 .produto{
@@ -119,16 +109,7 @@ label input:focus {
 .conteudo-fieldset{
   display: flex;  
   width: 90%;
-  padding: 5px;
-}
-
-.info-fieldset{
-    display: block;
-    
-}
-
-.dados-produto{
-    width: 150px;
+  padding: 10px;
 }
 
 .img-produto{
@@ -159,7 +140,6 @@ label input:focus {
     font-size: 12pt;
     margin: 0px 0px 20px 0px;
     cursor: pointer;
-    
 }
 
 /*Anexos*/
