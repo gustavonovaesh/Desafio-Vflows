@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    
     <title>Cadastro fornecedor</title>
 </head>
 
@@ -28,14 +28,14 @@
 
                     <label for="cnpj">
                         <span>CNPJ</span>
-                        <input type="text" class="tam-input-m" id="cnpj">
+                        <input type="text" class="tam-input-m" id="cnpj" required>
                     </label>
                 </div>
 
                 <div class="dados-input">
                     <label for="nome-fantasia">
                         <span>Nome fantasia</span>
-                        <input type="text" class="tam-input-g" id="nome-fantasia">
+                        <input type="text" class="tam-input-g" id="nome-fantasia" required>
                     </label>
 
                     <label for="inscricao-estadual">
@@ -47,7 +47,7 @@
                 <div class="dados-input">
                     <label for="cep">
                         <span>CEP</span>
-                        <input type="text" class="tam-input-m" id="cep">
+                        <input type="text" class="tam-input-m" id="cep" required>
                     </label>
 
                     <label for="inscricao-municipal">
@@ -59,12 +59,12 @@
                 <div class="dados-input">
                     <label for="endereco">
                         <span>Endereço</span>
-                        <input type="text" class="tam-input-g" id="endereco">
+                        <input type="text" class="tam-input-g" id="endereco" required>
                     </label>
 
                     <label for="numero">
                         <span>Número</span>
-                        <input type="text" class="tam-input-m" id="numero">
+                        <input type="text" class="tam-input-m" id="numero" required>
                     </label>
                 </div>
 
@@ -79,34 +79,34 @@
                 <div class="dados-input">
                     <label for="bairro">
                         <span>Bairro</span>
-                        <input type="text" class="tam-input-m" id="bairro">
+                        <input type="text" class="tam-input-m" id="bairro" required>
                     </label>
 
                     <label for="municipio">
                         <span>Município</span>
-                        <input type="text" class="tam-input-m" id="municipio">
+                        <input type="text" class="tam-input-m" id="municipio" required>
                     </label>
 
                     <label for="estado">
                         <span>Estado</span>
-                        <input type="text" class="tam-input-m" id="estado">
+                        <input type="text" class="tam-input-m" id="estado" required>
                     </label>
                 </div>
 
                 <div class="dados-input">
                     <label for="nome-pessoa">
                         <span>Nome da pessoa de contato</span>
-                        <input type="text" class="tam-input-m" id="nome-pessoa">
+                        <input type="text" class="tam-input-m" id="nome-pessoa" required>
                     </label>
 
                     <label>
                         <span>Telefone</span>
-                        <input type="text" class="tam-input-p" id="telefone">
+                        <input type="text" class="tam-input-p" id="telefone" required>
                     </label>
 
                     <label for="email">
                         <span>E-mail</span>
-                        <input type="text" class="tam-input-m" id="email">
+                        <input type="text" class="tam-input-m" id="email" required>
                     </label>
                 </div>
             </div>
@@ -121,10 +121,10 @@
                 <!--Produto 1-->
                 <div class="produto">
 
-                    <button class="btn-limpar" type="reset"><img class="img-lixeira" src="./img/img-lixeira.png"
+                    <button class="btn-limpar" type="button" id="btn-limpar-1"><img class="img-lixeira" src="./img/img-lixeira.png"
                             alt=""></button>
 
-                    <fieldset class="conteudo-fieldset">
+                    <fieldset class="conteudo-fieldset" id="fieldset-prod-1">
 
                         <legend>Produto - 1</legend>
 
@@ -135,24 +135,24 @@
                             <div class="dados-input">
                                 <label for="produto-1">
                                     <span>Produto</span>
-                                    <input type="text" class="tam-input-g" id="produto-1">
+                                    <input type="text" class="tam-input-g" id="produto-1" name="prod-1">
                                 </label>
                             </div>
 
                             <div class="dados-input">
                                 <label for="medida-1">
                                     <span>UND. Medida</span>
-                                    <input type="number" class="tam-input-p" id="medida-1">
+                                    <input type="number" class="tam-input-p" id="medida-1" name="prod-1">
                                 </label>
 
                                 <label for="qtd-estoque-1">
                                     <span>QDTDE. em estoque</span>
-                                    <input type="number" class="tam-input-p" id="qtd-estoque-1">
+                                    <input type="number" class="tam-input-p" id="qtd-estoque-1" name="prod-1">
                                 </label>
 
                                 <label for="valor-unitario-1">
                                     <span>Valor unitário</span>
-                                    <input type="number" class="tam-input-p" id="valor-unitario-1">
+                                    <input type="number" class="tam-input-p" id="valor-unitario-1" name="prod-1">
                                 </label>
 
                                 <label for="valor-total-1">
@@ -167,7 +167,7 @@
                 <!--Produto 2-->
                 <div class="produto">
 
-                    <button class="btn-limpar" type="reset"><img class="img-lixeira" src="./img/img-lixeira.png"
+                    <button class="btn-limpar" type="button"><img class="img-lixeira" id="btn-limpar-2" src="./img/img-lixeira.png"
                             alt=""></button>
 
                     <fieldset class="conteudo-fieldset">
@@ -181,24 +181,24 @@
                             <div class="dados-input">
                                 <label for="produto-2">
                                     <span>Produto</span>
-                                    <input type="text" class="tam-input-g" id="produto-2">
+                                    <input type="text" class="tam-input-g" id="produto-2" name="prod-2">
                                 </label>
                             </div>
 
                             <div class="dados-input">
                                 <label>
                                     <span>UND. Medida</span>
-                                    <input type="number" class="tam-input-p" id="medida-2">
+                                    <input type="number" class="tam-input-p" id="medida-2" name="prod-2">
                                 </label>
 
                                 <label>
                                     <span>QDTDE. em estoque</span>
-                                    <input type="number" class="tam-input-p" id="qtd-estoque-2">
+                                    <input type="number" class="tam-input-p" id="qtd-estoque-2" name="prod-2">
                                 </label>
 
                                 <label>
                                     <span>Valor unitário</span>
-                                    <input type="number" class="tam-input-p" id="valor-unitario-2">
+                                    <input type="number" class="tam-input-p" id="valor-unitario-2" name="prod-2">
                                 </label>
 
                                 <label>
@@ -274,8 +274,7 @@
 
             
             <input type="submit" value="Salvar fornecedor" id="salvar-fornecedor" class="btn-formulario">
-            
         </form>
 </body>
-
+    <script type="text/javascript" src="index.js"></script>
 </html>
