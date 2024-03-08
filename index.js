@@ -14,9 +14,11 @@ document.querySelector('#btn-limpar-2').addEventListener('click', function(){
 });
 
 
-//Arrumar o preenchimento automático
+//Preenchimento automático do valor total de cada produto.
+var cont = document.querySelectorAll('.produto').length;
 
-btn = document.querySelectorAll('.info-fieldset')[0];
+//Produto 1
+var btn = document.querySelectorAll('.produto')[cont - cont];
 btn.addEventListener('input', function(){
         var qntEstoque = document.querySelector('#qtd-estoque-1').value;
         var valorUni = document.querySelector('#valor-unitario-1').value;
@@ -25,15 +27,21 @@ btn.addEventListener('input', function(){
     document.querySelector('#valor-total-1').value = valor;
 });
 
+//Produto 2
+btn = document.querySelectorAll('.produto')[cont - 1];
+btn.addEventListener('input', function(){
+        var qntEstoque = document.querySelector('#qtd-estoque-2').value;
+        var valorUni = document.querySelector('#valor-unitario-2').value;
+        var valor = valorUni * qntEstoque;
 
-btn2 = document.querySelectorAll('.info-fieldset')[0];
-btn2.addEventListener('input', function(){
-        var qntEstoque2 = document.querySelector('#qtd-estoque-2').value;
-        var valorUni2 = document.querySelector('#valor-unitario-2').value;
-        var valor2 = valorUni2 * qntEstoque2;
-
-    document.querySelector('#valor-total-2').value = valor2;
+    document.querySelector('#valor-total-2').value = valor;
 });
+
+
+
+
+
+
 
 
 

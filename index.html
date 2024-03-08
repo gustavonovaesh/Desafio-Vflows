@@ -22,19 +22,19 @@
                 <div class="dados-input">
 
                     <label for="razao-social">
-                        <span>Razão social</span>
+                        <span>Razão social*</span>
                         <input type="text" id="razao-social" class="tam-input-g" required>
                     </label>
 
                     <label for="cnpj">
-                        <span>CNPJ</span>
+                        <span>CNPJ*</span>
                         <input type="text" class="tam-input-m" id="cnpj" required>
                     </label>
                 </div>
 
                 <div class="dados-input">
                     <label for="nome-fantasia">
-                        <span>Nome fantasia</span>
+                        <span>Nome fantasia*</span>
                         <input type="text" class="tam-input-g" id="nome-fantasia" required>
                     </label>
 
@@ -46,7 +46,7 @@
 
                 <div class="dados-input">
                     <label for="cep">
-                        <span>CEP</span>
+                        <span>CEP*</span>
                         <input type="text" class="tam-input-m" id="cep" required>
                     </label>
 
@@ -58,12 +58,12 @@
 
                 <div class="dados-input">
                     <label for="endereco">
-                        <span>Endereço</span>
+                        <span>Endereço*</span>
                         <input type="text" class="tam-input-g" id="endereco" required>
                     </label>
 
                     <label for="numero">
-                        <span>Número</span>
+                        <span>Número*</span>
                         <input type="text" class="tam-input-m" id="numero" required>
                     </label>
                 </div>
@@ -78,34 +78,34 @@
 
                 <div class="dados-input">
                     <label for="bairro">
-                        <span>Bairro</span>
+                        <span>Bairro*</span>
                         <input type="text" class="tam-input-m" id="bairro" required>
                     </label>
 
                     <label for="municipio">
-                        <span>Município</span>
+                        <span>Município*</span>
                         <input type="text" class="tam-input-m" id="municipio" required>
                     </label>
 
                     <label for="estado">
-                        <span>Estado</span>
+                        <span>Estado*</span>
                         <input type="text" class="tam-input-m" id="estado" required>
                     </label>
                 </div>
 
                 <div class="dados-input">
                     <label for="nome-pessoa">
-                        <span>Nome da pessoa de contato</span>
+                        <span>Nome da pessoa de contato*</span>
                         <input type="text" class="tam-input-m" id="nome-pessoa" required>
                     </label>
 
                     <label>
-                        <span>Telefone</span>
+                        <span>Telefone*</span>
                         <input type="text" class="tam-input-p" id="telefone" required>
                     </label>
 
                     <label for="email">
-                        <span>E-mail</span>
+                        <span>E-mail*</span>
                         <input type="text" class="tam-input-m" id="email" required>
                     </label>
                 </div>
@@ -157,7 +157,7 @@
 
                                 <label for="valor-total-1">
                                     <span>Valor total</span>
-                                    <input type="number" class="tam-input-p" id="valor-total-1" readonly>
+                                    <input type="number" class="tam-input-p" id="valor-total-1" name="prod-1" readonly>
                                 </label>
                             </div>
                         </div>
@@ -203,7 +203,7 @@
 
                                 <label>
                                     <span>Valor total</span>
-                                    <input type="number" class="tam-input-p" id="valor-total-2" readonly>
+                                    <input type="number" class="tam-input-p" id="valor-total-2" name="prod-2" readonly>
                                 </label>
                             </div>
                         </div>
@@ -219,8 +219,6 @@
             <div class="sessao">
 
                 <h2 class="titulo-sessao">Anexos</h2>
-
-                <div class="produto">
 
                     <fieldset class="conteudo-fieldset">
                         <legend>Itens</legend>
@@ -265,7 +263,6 @@
                             </div>
                         </div>
                     </fieldset>
-                </div>
 
                 <label for="adicionar-arquivo" class="btn-formulario">Anexar arquivo</label>
                 <input type="file" id="adicionar-arquivo">
