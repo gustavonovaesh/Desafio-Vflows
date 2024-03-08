@@ -37,6 +37,41 @@ btn.addEventListener('input', function(){
     document.querySelector('#valor-total-2').value = valor;
 });
 
+//Preenchendo CEP com API viaCEP.
+const cep = document.querySelector('#cep');
+const endereco = document.querySelector('#endereco');
+const bairro = document.querySelector('#bairro');
+const municipio = document.querySelector('#municipio');
+const estado = document.querySelector('#estado');
+
+const showData = (result) =>{
+
+        endereco.value = result.logradouro;
+        bairro.value = result.bairro;
+        municipio.value = result.localidade;
+        estado.value = result.uf;
+}
+
+cep.addEventListener('blur', (e) => {
+    let search = cep.value.replace('-','');
+    const options = {
+        method: 'GET',
+        mode: 'cors',
+        cache: 'default'
+    }
+
+    fetch(`https://viacep.com.br/ws/${search}/json/`, options)
+    .then(response => {response.json()
+        .then(data => showData(data))
+    })
+    .catch(e =>  {
+        if(cep.value != ''){
+            alert('CEP inválido!')
+            cep.value = '';
+        }
+    })
+})
+
 
 
 
