@@ -227,45 +227,45 @@
 
                             <div class="dados-input">
                                 <label>
-                                    <button class="btn-limpar" type="reset">
+                                    <button class="btn-limpar" id="limpar-arquivo-1" type="reset">
                                         <img class="img-lixeira" src="./img/img-lixeira.png" alt="">
                                     </button>
                                 </label>
 
                                 <label>
                                     <button type="button" class="visualizar-doc">
-                                        <a href="#" download>
+                                        <a id="btn-baixar-1" href="#" download>
                                             <img id="img-olho-1" src="./img/img-olho.png" alt="ícone de vizualização">
                                         </a>
                                     </button>
                                 </label>
 
-                                <span>Documento 1</span>
+                                <span id="doc-1">Nenhum arquivo anexado</span>
                             </div>
 
                             <div class="dados-input">
 
                                 <label>
-                                    <button class="btn-limpar" type="reset">
+                                    <button class="btn-limpar" type="reset" id="limpar-arquivo-2">
                                         <img class="img-lixeira" src="./img/img-lixeira.png" alt="">
                                     </button>
                                 </label>
 
                                 <label>
-                                    <button type="button" class="visualizar-doc">
-                                        <a href="#" download>
+                                    <button type="button" class="visualizar-doc" id="baixar">
+                                        <a href="" id="btn-baixar-2" download>
                                             <img id="img-olho-2" src="./img/img-olho.png" alt="ícone de vizualização">
                                         </a>
                                     </button>
                                 </label>
 
-                                <span>Documento 2</span>
+                                <span id="doc-2">Nenhum arquivo anexado</span>
                             </div>
                         </div>
                     </fieldset>
 
                 <label for="adicionar-arquivo" class="btn-formulario">Anexar arquivo</label>
-                <input type="file" id="adicionar-arquivo">
+                <input type="file" id="adicionar-arquivo" multiple>
 
             </div>
 

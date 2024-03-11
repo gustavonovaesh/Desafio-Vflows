@@ -74,6 +74,71 @@ cep.addEventListener('blur', (e) => {
 
 
 
+//Anexar arquivos
+const subir = document.querySelector('#adicionar-arquivo');
+subir.addEventListener('change', function(){
+
+    //Arquivo 1
+    if(sessionStorage.getItem('arquivo 1') == null){
+
+    var url = (URL || webKit).createObjectURL(this.files[0]); 
+    sessionStorage.setItem('arquivo 1', url);
+    document.getElementById('doc-1').innerText = 'Arquivo anexado'
+}
+    //Arquivo 2
+    else if(sessionStorage.getItem('arquivo 2') == null){
+        url = (URL || webKit).createObjectURL(this.files[0]);
+        sessionStorage.setItem('arquivo 2', url);
+        document.getElementById('doc-2').innerText = 'Arquivo anexado'
+    }
+        else
+            alert('Máximo 2 arquivos anexados.');
+});
+
+
+//Baixar arquivos anexados
+//Baixar arquivo 1
+const baixar = document.querySelector('#btn-baixar-1');
+baixar.addEventListener('click', function(){
+    baixar.href = sessionStorage.getItem('arquivo 1');
+});
+
+//Baixar arquivo 2
+const baixar2 = document.querySelector('#btn-baixar-2');
+baixar2.addEventListener('click', function(){
+    baixar2.href = sessionStorage.getItem('arquivo 2');
+});
+
+
+
+//Apagar arquivos anexados.
+function limparArquivo(key, id){
+    sessionStorage.removeItem(`${key}`);
+    document.getElementById(`${id}`).innerText = 'Nenhum arquivo anexado';
+}
+
+//Limpar arquivo 1.
+var limparArquivo1 = document.getElementById('limpar-arquivo-1');
+limparArquivo1.addEventListener('click', function(){
+    limparArquivo('arquivo 1', 'doc-1');
+})
+
+//Limpar arquivo 2.
+var limparArquivo2 = document.getElementById('limpar-arquivo-2');
+limparArquivo2.addEventListener('click', function(){
+    limparArquivo('arquivo 2', 'doc-2');
+})
+
+//Apagar todos os dados no sessionStorage quando a página for atualizada.
+sessionStorage.clear();
+
+    
+
+
+
+
+    
+
 
 
 
