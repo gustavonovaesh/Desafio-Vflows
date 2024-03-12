@@ -19,10 +19,15 @@ form{
     align-items: center;
 }
 
+.sessao span{
+    font-weight: 500;
+}
+
 h1{
-    font-size: 22pt;
+    font-size: 35pt;
     margin: 15px;
-    font-weight:lighter
+    font-weight:bolder;
+    color:rgb(28, 104, 190);
 }
 
 .titulo-sessao{

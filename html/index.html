@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Cadastro fornecedor</title>
+</head>
+
+<body>
+    <!--Dados do fornecedor-->
+    <h1>Cadastro fornecedor/produto</h1>
+
+    <form id="formulario" class="conteudo">
+
+        <div class="sessao">
+
+            <h2 class="titulo-sessao">Dados do fornecedor</h2>
+
+            <div class="dados-input">
+
+                <label for="razao-social">
+                    <span>Razão social*</span>
+                    <input type="text" id="razao-social" class="tam-input-g" required>
+                </label>
+
+                <label for="cnpj">
+                    <span>CNPJ*</span>
+                    <input type="text" class="tam-input-m" id="cnpj" required>
+                </label>
+            </div>
+
+            <div class="dados-input">
+                <label for="nome-fantasia">
+                    <span>Nome fantasia*</span>
+                    <input type="text" class="tam-input-g" id="nome-fantasia" required>
+                </label>
+
+                <label for="inscricao-estadual">
+                    <span>Inscrição estadual</span>
+                    <input type="text" class="tam-input-m" id="inscricao-estadual">
+                </label>
+            </div>
+
+            <div class="dados-input">
+                <label for="cep">
+                    <span>CEP*</span>
+                    <input type="text" class="tam-input-m" id="cep" required>
+                </label>
+
+                <label for="inscricao-municipal">
+                    <span>Inscrição municipal</span>
+                    <input type="text" class="tam-input-m" id="inscricao-municipal">
+                </label>
+            </div>
+
+            <div class="dados-input">
+                <label for="endereco">
+                    <span>Endereço*</span>
+                    <input type="text" class="tam-input-g" id="endereco" required>
+                </label>
+
+                <label for="numero">
+                    <span>Número*</span>
+                    <input type="text" class="tam-input-m" id="numero" required>
+                </label>
+            </div>
+
+            <div class="dados-input">
+
+                <label for="complemento">
+                    <span>Complemento</span>
+                    <input type="text" class="tam-input-g" id="complemento">
+                </label>
+            </div>
+
+            <div class="dados-input">
+                <label for="bairro">
+                    <span>Bairro*</span>
+                    <input type="text" class="tam-input-m" id="bairro" required>
+                </label>
+
+                <label for="municipio">
+                    <span>Município*</span>
+                    <input type="text" class="tam-input-m" id="municipio" required>
+                </label>
+
+                <label for="estado">
+                    <span>Estado*</span>
+                    <input type="text" class="tam-input-m" id="estado" required>
+                </label>
+            </div>
+
+            <div class="dados-input">
+                <label for="nome-pessoa">
+                    <span>Nome da pessoa de contato*</span>
+                    <input type="text" class="tam-input-m" id="nome-pessoa" required>
+                </label>
+
+                <label>
+                    <span>Telefone*</span>
+                    <input type="text" class="tam-input-p" id="telefone" required>
+                </label>
+
+                <label for="email">
+                    <span>E-mail*</span>
+                    <input type="text" class="tam-input-m" id="email" required>
+                </label>
+            </div>
+        </div>
+
+
+        <!--Cadastro dos produtos-->
+
+        <div class="sessao">
+
+            <h2 class="titulo-sessao">Produtos</h2>
+
+            <!--Produto 1-->
+            <div class="produto">
+
+                <button class="btn-limpar" type="button" id="btn-limpar-1"><img class="img-lixeira"
+                        src="/img/img-lixeira.png" alt=""></button>
+
+                <fieldset class="conteudo-fieldset" id="fieldset-prod-1">
+
+                    <legend>Produto - 1</legend>
+
+                    <img class="img-produto" src="/img/img-produto.png" alt="imagem representativa do produto">
+
+                    <div class="info-fieldset">
+
+                        <div class="dados-input">
+                            <label for="produto-1">
+                                <span>Produto</span>
+                                <input type="text" class="tam-input-g" id="produto-1" name="prod-1">
+                            </label>
+                        </div>
+
+                        <div class="dados-input">
+                            <label for="medida-1">
+                                <span>UND. Medida</span>
+                                <select name="prod-1" id="medida-1" class="tam-input-p">
+                                    <option value="selecione" selected>Selecione</option>
+                                    <option value="g">g</option>
+                                    <option value="kg">Kg</option>
+                                    <option value="ml">ml</option>
+                                    <option value="l">L</option>
+                                </select>
+                            </label>
+
+                            <label for="qtd-estoque-1">
+                                <span>QDTDE. em estoque</span>
+                                <input type="number" class="tam-input-p" id="qtd-estoque-1" name="prod-1">
+                            </label>
+
+                            <label for="valor-unitario-1">
+                                <span>Valor unitário</span>
+                                <input type="number" class="tam-input-p" id="valor-unitario-1" name="prod-1">
+                            </label>
+
+                            <label for="valor-total-1">
+                                <span>Valor total</span>
+                                <input type="number" class="tam-input-p" id="valor-total-1" name="prod-1" readonly>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <!--Produto 2-->
+            <div class="produto">
+
+                <button class="btn-limpar" type="button"><img class="img-lixeira" id="btn-limpar-2"
+                        src="/img/img-lixeira.png" alt=""></button>
+
+                <fieldset class="conteudo-fieldset">
+
+                    <legend>Produto - 2</legend>
+
+                    <img class="img-produto" src="/img/img-produto.png" alt="imagem representativa do produto">
+
+                    <div class="info-fieldset">
+
+                        <div class="dados-input">
+                            <label for="produto-2">
+                                <span>Produto</span>
+                                <input type="text" class="tam-input-g" id="produto-2" name="prod-2">
+                            </label>
+                        </div>
+
+                        <div class="dados-input">
+                            <label>
+                                <span>UND. Medida</span>
+                                <select name="prod-2" id="medida-2" class="tam-input-p">
+                                    <option value="selecione" selected>Selecione</option>
+                                    <option value="g">g</option>
+                                    <option value="kg">Kg</option>
+                                    <option value="ml">ml</option>
+                                    <option value="l">L</option>
+                                </select>
+                            </label>
+
+                            <label>
+                                <span>QDTDE. em estoque</span>
+                                <input type="number" class="tam-input-p" id="qtd-estoque-2" name="prod-2">
+                            </label>
+
+                            <label>
+                                <span>Valor unitário</span>
+                                <input type="number" class="tam-input-p" id="valor-unitario-2" name="prod-2">
+                            </label>
+
+                            <label>
+                                <span>Valor total</span>
+                                <input type="number" class="tam-input-p" id="valor-total-2" name="prod-2" readonly>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <input type="button" id="adicionar-produto" class="btn-formulario" value="Adicionar produto">
+
+        </div>
+
+        <!--Anexos-->
+
+        <div class="sessao">
+
+            <h2 class="titulo-sessao">Anexos</h2>
+
+            <fieldset class="conteudo-fieldset">
+                <legend>Itens</legend>
+
+                <div class="info-fieldset">
+
+                    <div class="dados-input">
+                        <label>
+                            <button class="btn-limpar" id="limpar-arquivo-1" type="reset">
+                                <img class="img-lixeira" src="/img/img-lixeira.png" alt="">
+                            </button>
+                        </label>
+
+                        <label>
+                            <button type="button" class="visualizar-doc">
+                                <a id="btn-baixar-1" href="#" download>
+                                    <img id="img-olho-1" src="/img/img-olho.png" alt="ícone de vizualização">
+                                </a>
+                            </button>
+                        </label>
+
+                        <span id="doc-1" class="dados-input">Nenhum arquivo anexado</span>
+                    </div>
+
+                    <div class="dados-input">
+
+                        <label>
+                            <button class="btn-limpar" type="reset" id="limpar-arquivo-2">
+                                <img class="img-lixeira" src="/img/img-lixeira.png" alt="">
+                            </button>
+                        </label>
+
+                        <label>
+                            <button type="button" class="visualizar-doc" id="baixar">
+                                <a href="" id="btn-baixar-2" download>
+                                    <img id="img-olho-2" src="/img/img-olho.png" alt="ícone de vizualização">
+                                </a>
+                            </button>
+                        </label>
+
+                        <span id="doc-2" class="dados-input">Nenhum arquivo anexado</span>
+
+                    </div>
+                </div>
+            </fieldset>
+
+            <label for="adicionar-arquivo" class="btn-formulario">Anexar arquivo</label>
+            <input type="file" id="adicionar-arquivo" multiple>
+
+        </div>
+
+
+        <input type="submit" value="Salvar fornecedor" id="salvar-fornecedor" class="btn-formulario">
+    </form>
+</body>
+<script type="text/javascript" src="/js/index.js"></script>
+
+</html>
