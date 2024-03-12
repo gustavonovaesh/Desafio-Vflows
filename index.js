@@ -132,12 +132,10 @@ limparArquivo2.addEventListener('click', function(){
 //Apagar todos os dados no sessionStorage quando a página for atualizada.
 sessionStorage.clear();
 
-
 //Armazenando os dados em JSON.
-var salvar = document.getElementById('salvar-fornecedor');
-salvar.addEventListener('click', function(){
+function gravaJSON(){
 
-        var dadosOBJ = 
+    var dadosOBJ = 
         {
             razaoSocial: document.getElementById('razao-social').value,
             nomeFantasia: document.getElementById('nome-fantasia').value,
@@ -183,7 +181,11 @@ salvar.addEventListener('click', function(){
         var dadosJSON = JSON.stringify(dadosOBJ);
         console.log(dadosOBJ);
         console.log(dadosJSON);
-});
+}
+
+var salvar = document.getElementById('salvar-fornecedor');
+salvar.addEventListener('click', gravaJSON);
+
 
 
     
