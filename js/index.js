@@ -132,9 +132,58 @@ limparArquivo2.addEventListener('click', function(){
 //Apagar todos os dados no sessionStorage quando a página for atualizada.
 sessionStorage.clear();
 
-    
 
+//Armazenando os dados em JSON.
+var salvar = document.getElementById('salvar-fornecedor');
+salvar.addEventListener('click', function(){
 
+        var dadosOBJ = 
+        {
+            razaoSocial: document.getElementById('razao-social').value,
+            nomeFantasia: document.getElementById('nome-fantasia').value,
+            cnpj: document.getElementById('cnpj').value,
+            inscricaoEstadual: document.getElementById('inscricao-estadual').value,
+            inscricaoMunicipal: document.getElementById('inscricao-municipal').value,
+            nomeContato: document.getElementById('nome-pessoa').value,
+            telefoneContato: document.getElementById('telefone').value,
+            emailContato: document.getElementById('email').value,
+            produto:[
+                        {
+                            indice: 1,
+                            descricaoProduto: document.getElementById('produto-1').value,
+                            unidadeMedida: document.getElementById('medida-1').value,
+                            qtdeEstoque: document.getElementById('qtd-estoque-1').value,
+                            valorUnitario: document.getElementById('valor-unitario-1').value,
+                            valorTotal: document.getElementById('valor-total-1').value,
+                        },
+                        {
+                            indice: 2,
+                            descricaoProduto: document.getElementById('produto-2').value,
+                            unidadeMedida: document.getElementById('medida-2').value,
+                            qtdeEstoque: document.getElementById('qtd-estoque-2').value,
+                            valorUnitario: document.getElementById('valor-unitario-2').value,
+                            valorTotal: document.getElementById('valor-total-2').value,
+                        },
+                    ],
+            anexos: [
+                        {
+                            indice: 1,
+                            nomeArquivo: '',
+                            blobArquivo: sessionStorage.getItem('arquivo 1'),
+                        },
+                        {
+                            indice: 2,
+                            nomeArquivo: '',
+                            blobArquivo: sessionStorage.getItem('arquivo 2'),
+                        }
+
+                    ]       
+        }
+        //Imprimindo o objeto e o JSON no console.
+        var dadosJSON = JSON.stringify(dadosOBJ);
+        console.log(dadosOBJ);
+        console.log(dadosJSON);
+});
 
 
     
