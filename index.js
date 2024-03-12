@@ -66,7 +66,7 @@ cep.addEventListener('blur', (e) => {
     })
     .catch(e =>  {
         if(cep.value != ''){
-            alert('CEP inválido!')
+            alert('Erro. Tente Novamente.')
             cep.value = '';
         }
     })
