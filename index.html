@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-
-    <title>Cadastro fornecedor</title>
+    <link rel="stylesheet" href="index.css">
+    <title>Cadastro fornecedor/produto</title>
 </head>
 
 <body>
@@ -14,13 +12,11 @@
     <h1>Cadastro fornecedor/produto</h1>
 
     <form id="formulario" class="conteudo">
-
         <div class="sessao">
 
             <h2 class="titulo-sessao">Dados do fornecedor</h2>
 
             <div class="dados-input">
-
                 <label for="razao-social">
                     <span>Razão social*</span>
                     <input type="text" id="razao-social" class="tam-input-g" required>
@@ -113,7 +109,6 @@
 
 
         <!--Cadastro dos produtos-->
-
         <div class="sessao">
 
             <h2 class="titulo-sessao">Produtos</h2>
@@ -121,17 +116,16 @@
             <!--Produto 1-->
             <div class="produto">
 
-                <button class="btn-limpar" type="button" id="btn-limpar-1"><img class="img-lixeira"
-                        src="./img/img-lixeira.png" alt=""></button>
+                <button class="btn-limpar" type="button" id="btn-limpar-1">
+                    <img class="img-lixeira"src="./img/img-lixeira.png" alt="Botão limpar dados do produto.">
+                </button>
 
                 <fieldset class="conteudo-fieldset" id="fieldset-prod-1">
-
                     <legend>Produto - 1</legend>
 
                     <img class="img-produto" src="./img/img-produto.png" alt="imagem representativa do produto">
 
                     <div class="info-fieldset">
-
                         <div class="dados-input">
                             <label for="produto-1">
                                 <span>Produto</span>
@@ -173,17 +167,16 @@
             <!--Produto 2-->
             <div class="produto">
 
-                <button class="btn-limpar" type="button"><img class="img-lixeira" id="btn-limpar-2"
-                        src="./img/img-lixeira.png" alt=""></button>
+                <button class="btn-limpar" type="button">
+                    <img class="img-lixeira" id="btn-limpar-2" src="./img/img-lixeira.png" alt="Botão para limpar os dados do produto 2.">
+                </button>
 
-                <fieldset class="conteudo-fieldset">
-
+                <fieldset class="conteudo-fieldset" id="fieldset-prod-2">
                     <legend>Produto - 2</legend>
 
                     <img class="img-produto" src="./img/img-produto.png" alt="imagem representativa do produto">
 
                     <div class="info-fieldset">
-
                         <div class="dados-input">
                             <label for="produto-2">
                                 <span>Produto</span>
@@ -223,11 +216,9 @@
             </div>
 
             <input type="button" id="adicionar-produto" class="btn-formulario" value="Adicionar produto">
-
         </div>
 
         <!--Anexos-->
-
         <div class="sessao">
 
             <h2 class="titulo-sessao">Anexos</h2>
@@ -236,7 +227,6 @@
                 <legend>Itens</legend>
 
                 <div class="info-fieldset">
-
                     <div class="dados-input">
                         <label>
                             <button class="btn-limpar" id="limpar-arquivo-1" type="reset">
@@ -259,27 +249,25 @@
 
                         <label>
                             <button class="btn-limpar" type="reset" id="limpar-arquivo-2">
-                                <img class="img-lixeira" src="./img/img-lixeira.png" alt="">
+                                <img class="img-lixeira" src="./img/img-lixeira.png" alt="Botão para deletar o primeiro arquivo anexado.">
                             </button>
                         </label>
 
                         <label>
                             <button type="button" class="visualizar-doc" id="baixar">
                                 <a href="" id="btn-baixar-2" download>
-                                    <img id="img-olho-2" src="./img/img-olho.png" alt="ícone de vizualização">
+                                    <img id="img-olho-2" src="./img/img-olho.png" alt="ícone de vizualização e download do arquivo anexado 2">
                                 </a>
                             </button>
                         </label>
 
                         <span id="doc-2" class="dados-input">Nenhum arquivo anexado</span>
-
                     </div>
                 </div>
             </fieldset>
 
             <label for="adicionar-arquivo" class="btn-formulario">Anexar arquivo</label>
             <input type="file" id="adicionar-arquivo" multiple>
-
         </div>
 
 
@@ -287,5 +275,4 @@
     </form>
 </body>
 <script type="text/javascript" src="index.js"></script>
-
 </html>
